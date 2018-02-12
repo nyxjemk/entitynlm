@@ -3,17 +3,17 @@
 // Date: 09-28-2016
 // Time-stamp: <yangfeng 09/21/2017 14:53:54>
 
-#include "dynet/globals.h"
-#include "dynet/nodes.h"
-#include "dynet/dynet.h"
-#include "dynet/training.h"
-#include "dynet/timing.h"
-#include "dynet/rnn.h"
-#include "dynet/gru.h"
-#include "dynet/lstm.h"
-#include "dynet/dict.h"
-#include "dynet/expr.h"
-#include "dynet/model.h"
+#include "/appl/math/dynet/include/dynet/globals.h"
+#include "/appl/math/dynet/include/dynet/nodes.h"
+#include "/appl/math/dynet/include/dynet/dynet.h"
+#include "/appl/math/dynet/include/dynet/training.h"
+#include "/appl/math/dynet/include/dynet/timing.h"
+#include "/appl/math/dynet/include/dynet/rnn.h"
+#include "/appl/math/dynet/include/dynet/gru.h"
+#include "/appl/math/dynet/include/dynet/lstm.h"
+#include "/appl/math/dynet/include/dynet/dict.h"
+#include "/appl/math/dynet/include/dynet/expr.h"
+#include "/appl/math/dynet/include/dynet/model.h"
 
 #include "entitynlm.h"
 #include "util.h"
