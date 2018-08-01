@@ -6,17 +6,17 @@
 #ifndef ENTITYNLM_H
 #define ENTITYNLM_H
 
-#include "/appl/math/dynet/nodes.h"
-#include "/appl/math/dynet/dynet.h"
-#include "/appl/math/dynet/training.h"
-#include "/appl/math/dynet/timing.h"
-#include "/appl/math/dynet/rnn.h"
-#include "/appl/math/dynet/gru.h"
-#include "/appl/math/dynet/lstm.h"
-#include "/appl/math/dynet/dict.h"
-#include "/appl/math/dynet/expr.h"
-#include "/appl/math/dynet/tensor.h"
-#include "/appl/math/dynet/cfsm-builder.h"
+#include "dynet/nodes.h"
+#include "dynet/dynet.h"
+#include "dynet/training.h"
+#include "dynet/timing.h"
+#include "dynet/rnn.h"
+#include "dynet/gru.h"
+#include "dynet/lstm.h"
+#include "dynet/dict.h"
+#include "dynet/expr.h"
+#include "dynet/tensor.h"
+#include "dynet/cfsm-builder.h"
 #include "/appl/math/dynet/pretrain.h"
 
 #include "util.h"
