@@ -363,6 +363,7 @@ int main(int argc, char** argv) {
     ofstream myfile;
     myfile.open(ftst + ".sample");
     for (auto& doc : tst){
+      (void)doc;
       for (unsigned ni = 0; ni < nsample; ni++){
 	ComputationGraph cg;
 	Doc newdoc;
