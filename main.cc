@@ -363,8 +363,9 @@ int main(int argc, char** argv) {
     ofstream myfile;
     myfile.open(ftst + ".sample");
     for (auto& doc : tst){
-      (void)doc;
+      printf("0 %s\n", __PRETTY_FUNCTION__);
       for (unsigned ni = 0; ni < nsample; ni++){
+	printf("1 %s\n", __PRETTY_FUNCTION__);
 	ComputationGraph cg;
 	Doc newdoc;
 	cerr << "Sampling function only works with discriminative model" << endl;
