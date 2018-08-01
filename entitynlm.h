@@ -17,7 +17,7 @@
 #include "dynet/expr.h"
 #include "dynet/tensor.h"
 #include "dynet/cfsm-builder.h"
-#include "/appl/math/dynet/pretrain.h"
+#include "/appl/math/dynet/2.0/include/dynet/pretrain.h"
 
 #include "util.h"
 
