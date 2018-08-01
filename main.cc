@@ -363,7 +363,7 @@ int main(int argc, char** argv) {
     ofstream myfile;
     myfile.open(ftst + ".sample");
     for (auto& doc : tst){
-      static_assert(3, 'test');
+      #pragma message("You really shouldn't be doing that.")
       for (unsigned ni = 0; ni < nsample; ni++){
 	ComputationGraph cg;
 	Doc newdoc;
