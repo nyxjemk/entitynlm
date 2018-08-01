@@ -4,8 +4,8 @@
 // Time-stamp: <yangfeng 10/03/2017 11:12:13>
 
 #include "util.h"
-#include "dynet/tensor.h" // for the rand01() function
-#include "dynet/io.h"
+#include "/appl/math/dynet/tensor.h" // for the rand01() function
+#include "/appl/math/dynet/io.h"
 
 #include <boost/algorithm/string.hpp>
 
