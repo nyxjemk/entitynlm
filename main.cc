@@ -30,7 +30,7 @@ namespace po = boost::program_options;
 using namespace std;
 using namespace dynet;
 
-#define NODEBUG 1
+#define NODEBUG 0
 
 // For logging
 #if NODEBUG
