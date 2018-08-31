@@ -257,8 +257,10 @@ int main(int argc, char** argv) {
     vector<unsigned> order(training.size());
     for (unsigned i = 0; i < order.size(); ++i) order[i] = i;
     int report = 0;
-    while(true) {
+    int current_epoch = 0;
+    while(current_epoch < epochs) {
       Timer iteration("completed in");
+      current_epoch++;
       double loss = 0, docloss = 0;
       unsigned words = 0;
       for (unsigned i = 0; i < report_every_i; ++i) {
