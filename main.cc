@@ -52,6 +52,7 @@ int main(int argc, char** argv) {
     ("help", "produce this help information")
     ("task", po::value<string>(), "task")
     ("modeltype", po::value<string>()->default_value(string("gen")), "model type: 'gen' or 'dis'")
+    ("epochs", po::value<unsigned>()->default_value((unsigned)10), "number of training epochs")
     ("lr", po::value<float>()->default_value((float)0.1), "learning rate")
     ("trainer", po::value<unsigned>()->default_value((unsigned)0), "0: SGD; 1: AdaGrad; 2: Adam")
     ("trnfile", po::value<string>()->default_value(string("")), "training file")
