@@ -92,6 +92,7 @@ int main(int argc, char** argv) {
   string fdct = vm["dctfile"].as<string>();
   string fmod = vm["modfile"].as<string>();
   float lr = vm["lr"].as<float>();
+  unsigned epochs = vm["epochs"].as<unsigned>();
   unsigned trainer = vm["trainer"].as<unsigned>();
   unsigned inputdim = vm["inputdim"].as<unsigned>();
   unsigned hiddendim = vm["hiddendim"].as<unsigned>();
@@ -149,6 +150,7 @@ int main(int argc, char** argv) {
   LOG(INFO) << "[model] model file: " << fmod;
   LOG(INFO) << "[model] trainer: " << trainer;
   LOG(INFO) << "[model] learning rate: " << lr;
+  LOG(INFO) << "[model] epochs: " << epochs;
   LOG(INFO) << "[model] input dimension: " << inputdim;
   LOG(INFO) << "[model] hidden dimension: " << hiddendim;
   LOG(INFO) << "[model] entity embedding dimension: " << entitydim;
