@@ -267,7 +267,7 @@ int main(int argc, char** argv) {
 	loss = 0; words = 0;
 	if (si == training.size()) {
 	  si = 0;
-	  cerr << "** SHUFFLE **\n";
+	  //cerr << "** SHUFFLE **\n";
 	  shuffle(order.begin(), order.end(), *rndeng);
 	}
 	docs ++;
@@ -309,6 +309,7 @@ int main(int argc, char** argv) {
 	  for (auto& sent : doc.sents) dwords += sent.size() - 1;
 	}
 	dloss = dloss / dwords;
+  cerr << "\nDLoss = " << boost::format("%1.4f") % (dloss) << "\n";
 #if NODEBUG
 	LOG(INFO) << "DEV [epoch="
 		  << boost::format("%1.2f") % (docs / (double)training.size())
@@ -318,8 +319,9 @@ int main(int argc, char** argv) {
 	cerr << "\nDEV [epoch="
 	     << boost::format("%1.2f") % (docs / (double)training.size())
 	     << "] Loss = " << boost::format("%1.4f") % (dloss)
-	     << " (" << boost::format("%1.4f") % best_dev_loss << ") ";
+	     << " (" << boost::format("%1.4f") % best_dev_loss << ") \n";
 #endif
+  cerr << "dloss / best_dev_loss: " << boost::format("%1.4f") % (dloss) << " / " << boost::format("%1.4f") % (best_dev_loss) << "\n";
 	if (dloss < best_dev_loss){
 #if NODEBUG
 	  LOG(INFO) << "Save model to: " << fprefix;
