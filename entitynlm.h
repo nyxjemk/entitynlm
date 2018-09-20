@@ -432,7 +432,7 @@ Expression EntityNLM<Builder>::BuildGraph(const Doc& doc,
   } else if (err_type == 2){
     // entity prediction errors
     if (e_errs.size() > 0){
-      i_nerr = sum(e_errs) / e_errs.size(); // normalize
+      i_nerr = (sum(e_errs) / e_errs.size()) * x_errs.size(); // normalize
     } else {
       i_nerr = input(cg, 10.0);
     }
